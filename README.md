@@ -20,7 +20,7 @@ const Vulnerability1 = (req, res) => {
 }
 
 ```
-1. ssrf in `index.vuln.js` line `23`
+2. ssrf in `index.vuln.js` line `23`
 
 ```js
 

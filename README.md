@@ -2,7 +2,7 @@
 
 ## there is 2 vulnerabilities
 
-1. ssrf in `index.vuln.js` line `11`
+1. ssrf in `index.vuln.js` line `11` to `19`
 
 ```js
 

@@ -13,7 +13,7 @@ const Vulnerability1 = (req, res) => {
             res.write(response1.body);
             res.end();
         } else {
-            response.end();
+            res.end();
             console.log('error')
         }
     });
@@ -22,10 +22,12 @@ const Vulnerability1 = (req, res) => {
 const Vulnerability2 = (req, res) => {
     needle('put', req.query['url'], { state: 'god' }, { json: true })
     .then(function(response) {
-        return doSomethingWith(response)
+        // doSomethingWith(response)
+        res.end();
     })
     .catch(function(err) {
         console.log('Call the locksmith!')
+        res.end();
     })
 }
 

@@ -7,7 +7,7 @@ import needle from "needle";
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
-const Vulnerability1 = (req: Request, res: Response) => {
+const Vulnerability1 = (req, res) => {
     var url = req.query['url'];
     needle.get(url, { timeout: 3000 }, function(error, response1) {
         if (!error && response1.statusCode == 200) {

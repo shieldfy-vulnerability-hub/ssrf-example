@@ -33,3 +33,4 @@ const Vulnerability2 = (req, res) => {
 
 app.get('/vuln1', Vulnerability1);
 app.get('/vuln2', Vulnerability2);
+
